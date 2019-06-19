@@ -1,0 +1,161 @@
+/* 4 colors page accordion */
+
+#blueCard:hover .colorsInfo,
+#redCard:hover .colorsInfo,
+#yellowCard:hover .colorsInfo,
+#greenCard:hover .colorsInfo {
+    display: block;
+    flex-grow: 10;
+    transition: 0.5s;
+}
+
+#blueCard:hover .fourColorsAccordionCard__head,
+#redCard:hover .fourColorsAccordionCard__head,
+#yellowCard:hover .fourColorsAccordionCard__head,
+#greenCard:hover .fourColorsAccordionCard__head {
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: rotate(0deg) 
+}
+
+#blueCard:hover,
+#redCard:hover,
+#yellowCard:hover,
+#greenCard:hover {
+    flex-grow: 10;
+    transition: 0.5s;
+}
+
+.colorsInfo {
+    display: none;
+}
+
+.fourColorsAccordionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  transform: skew(5deg);
+}
+
+.fourColorsAccordionCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+	flex: 1;
+    transition: 0.5s;
+	height: 75vmin;
+	position: relative;
+}
+
+.fourColorsAccordionCard h3 {
+    font-size: 28px;
+}
+
+.fourColorsAccordionCard p {
+    font-size: 22px;
+}
+
+.fourColorsAccordionCard__head {
+	color: white;
+	background: rgba(0, 0,0, 0.65);
+	padding: 0.5em;
+    transform-origin: 0% 0%;
+    transform: rotate(-90deg);
+	transition: all 0.5s ease-in-out;
+	min-width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 1.5em;
+	white-space: nowrap;
+}
+
+/*    &:hover {
+      flex-grow: 10; */
+.fourColorsAccordionCard {
+	display: flex;
+}
+
+.container div.fourColorsAccordionCard div.fourColorsAccordionCard__head {
+	text-align: center;
+	top: calc(100% - 2em);
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 2em;
+	transform: rotate(0deg) skew(-5deg);
+}
+    
+/* p {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 1s ease-in-out;
+	filter: grayscale(100%);
+} */
+
+.fourColorsAccordionCard1 {
+	background-color: #0091FF;
+    height: 250px;
+    width: 50px;
+	color: white;
+}
+    
+.fourColorsAccordionCard2 {
+	background-color: #6FC400;
+	height: 250px;
+	color: white;
+}
+    
+.fourColorsAccordionCard3 {
+	background-color: #FEC43C;
+	height: 250px;
+	color: white;
+}
+    
+.fourColorsAccordionCard4 {
+	background-color: #B91733;
+	height: 250px;
+	color: white;
+}
+
+@media only screen and (max-width: 691px) {
+    .fourColorsAccordionCard__head {
+        font-size: 1.2rem;
+    }
+    .fourColorsAccordionCard h3 {
+        font-size: 24px;
+    }
+    
+    .fourColorsAccordionCard p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    .fourColorsAccordionCard h3 {
+        font-size: 20px;
+    }
+    
+    .fourColorsAccordionCard p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 364px) {
+    .fourColorsAccordionCard__head {
+        font-size: 1rem;
+    }
+
+    .fourColorsAccordionCard h3 {
+        font-size: 15px;
+    }
+    
+    .fourColorsAccordionCard p {
+        font-size: 12px;
+    }
+}

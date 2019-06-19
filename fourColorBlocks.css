@@ -1,0 +1,176 @@
+
+  /* 4 Colors Page */
+.fourColorsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.blueContainer {
+    display: flex;  
+    width: 100%;
+    height: 210px;
+    background-color: #0091ff;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+      
+.blueHeaderContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;
+    width: 150px;
+    background-color: #0091FF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+    
+.blueHeaderContainer h2,
+.blueDescriptionContainer h3,
+.yellowHeaderContainer h2,
+.yellowDescriptionContainer h3,
+.greenHeaderContainer h2,
+.greenDescriptionContainer h3,
+.redHeaderContainer h2,
+.redDescriptionContainer h3 {
+    color: white;
+    font-size: 34px;
+}
+  
+.blueDescriptionContainer,
+.yellowDescriptionContainer {
+    margin: 10px 10px 10px 10px;
+    width: 80%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+  
+.greenContainer {
+    display: flex;  
+    width: 100%;
+    height: 210px;
+    background-color: #6FC400;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+
+}
+  
+.greenHeaderContainer {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 150px;
+    background-color: #6FC400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.greenDescriptionContainer,
+.redDescriptionContainer {
+    margin: 10px 10px 10px 10px;
+    width: 85%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+  
+.yellowContainer {
+    display: flex;  
+    width: 100%;
+    height: 210px;
+    background-color: #FEC43C;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+  
+.yellowHeaderContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;
+    width: 150px;
+    background-color: #FEC43C;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+  
+.redContainer {
+    display: flex;  
+    width: 100%;
+    height: 210px;
+    background-color: #B91733;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+}
+  
+.redHeaderContainer {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 150px;
+    background-color: #B91733;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: solid 3px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+  
+@media only screen and (max-width: 630px) {
+    .blueDescriptionContainer h3.energyTitle,
+    .blueHeaderContainer h2,
+    .greenDescriptionContainer h3.energyTitle,
+    .greenHeaderContainer h2,
+    .yellowDescriptionContainer h3.energyTitle,
+    .yellowHeaderContainer h2,
+    .redDescriptionContainer h3.energyTitle,
+    .redHeaderContainer h2 {
+        font-size: 24px;
+    }
+  
+    .blueDescriptionContainer p,
+    .yellowDescriptionContainer p,
+    .greenDescriptionContainer p,
+    .redDescriptionContainer p {
+        font-size: 18px;
+    }
+}
+  
+@media only screen and (max-width: 376px) {
+    .blueDescriptionContainer h3.energyTitle,
+    .blueHeaderContainer h2,
+    .greenDescriptionContainer h3.energyTitle,
+    .greenHeaderContainer h2,
+    .yellowDescriptionContainer h3.energyTitle,
+    .yellowHeaderContainer h2,
+    .redDescriptionContainer h3.energyTitle,
+    .redHeaderContainer h2 {
+        font-size: 20px;
+    }
+  
+    .blueDescriptionContainer p,
+    .yellowDescriptionContainer p,
+    .greenDescriptionContainer p,
+    .redDescriptionContainer p {
+        font-size: 14px;
+    }
+}
